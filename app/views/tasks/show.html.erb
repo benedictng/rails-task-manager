@@ -1,0 +1,10 @@
+<h1>Tasks#show</h1>
+<p>Find me in app/views/tasks/show.html.erb</p>
+
+<p>Title: <%= @task.title %></p>
+<p>Details: <%= @task.details %></p>
+<p>Completed? <%= @task.completed ? 'yes' : 'no' %></p>
+
+<%= link_to 'back to home', tasks_path %>
+<%= link_to 'edit', edit_task_path %>
+<%= link_to 'delete', task_path, method: :delete %>
